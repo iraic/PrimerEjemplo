@@ -2,12 +2,16 @@ package mx.tecnm.cdhidalgo.primerejemplo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity2 : AppCompatActivity() {
     private var listaPersonas:Array<String>? = null;
+
+    private var lista1: List<String>? =null
+
     private var rvList: RecyclerView? = null;
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -3,6 +3,7 @@ package mx.tecnm.cdhidalgo.primerejemplo
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -10,8 +11,14 @@ class RecyclerPersonAdapter(var persons: Array<String>?): RecyclerView.Adapter<R
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvName: TextView
+        var bItem: Button
         init {
             tvName = itemView.findViewById(R.id.tvName)
+            bItem = itemView.findViewById(R.id.bItem)
+
+            bItem.setOnClickListener { }
+            itemView.setOnClickListener {  }
+            //itemView.setOnLongClickListener {  }
         }
     }
 
